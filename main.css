@@ -1,0 +1,18 @@
+.outer {
+    width: 500px;
+    height: 500px;
+    border: 1px solid red !important;
+    position: relative;
+}
+.inner {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.outer:hover .inner {
+    transform: translateX(450px);
+    transition-duration: 2s;
+}
